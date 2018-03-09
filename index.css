@@ -17,10 +17,12 @@ body {
 }
 
 header {
+    position:fixed;
+    width:100%;
     background:#35424a;
     color:white;
-    padding-top:30px;
-    min-height:70px;
+    padding-top:20px;
+    min-height:60px;
     border-bottom:#FFD700 5px solid;
 }
 header #titling {
@@ -36,9 +38,13 @@ header  #skip{
   margin-top: 10px;
 }
 
+ul {
+  float: right;
+}
+
 header li {
   display:inline;
-  padding: 0 40px 0 10px; /* top right bottom left*/
+  padding: 0 40px 0 5px; /* top right bottom left*/
 }
 header a{
   color:white;
@@ -46,7 +52,20 @@ header a{
   font-size: 14px;
 }
 
+.art {
+  display:block;
+}
+
+.birthplace {
+    color:white;
+    font-family: cursive;
+    font-size: 35px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
 #showcase { /*title picture*/
+   padding-top:100px;
     min-height:500px;
     min-width:300px;
     background:url('Florence.jpg') no-repeat 0 -20px;
@@ -66,12 +85,34 @@ header a:hover {
     font-weight:bold;
 }
 
+.two-column {
+    float: left;
+    width: 430px;
+    margin: 10px;
+}
+
+.pic-col {
+  float: left;
+  width: 500px;
+  margin: 10px;
+}
+
 #body {
-    margin-left: 20px;
     font-family: sans-serif;
     color:#262e3d;
     font-size: 25px;
     padding-right: 10px;
+
+    border-style: solid;
+    border-color: #FFD700;
+    border-width: 5px;
+    margin: 20px;
+
+    box-shadow: 5px 5px 5px 5px #777777;
+}
+
+a[name] {
+  padding-top: 100px;
 }
 
 table{
@@ -111,6 +152,9 @@ thead td{
   margin-right: 20px;
   font-family: serif;
   font-size: 25px;
+  border-bottom: 6px #FFD700 solid ;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .box img + img {
@@ -151,6 +195,29 @@ input[type=email]:focus {
     color:white;
 }
 
+#button:hover {
+    background-color:#FFD700 ;
+    color:black;
+    font-weight: bold;
+}
+
+div.ex1 {
+    border: 3px solid black;
+    width: 400px;
+    height: 200px;
+    overflow: scroll;
+    margin-left: 400px;
+    margin-bottom: 20px;
+    padding:40px;
+}
+
+#places {
+  float: left;
+  padding-left: 150px;
+  font-size: 30px;
+  list-style-type: circle;
+  list-style-position: outside;
+}
 
 footer {
   font-family: sans-serif;
